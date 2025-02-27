@@ -75,6 +75,140 @@
         "bg_buffer": 0,
         "bg_color": "#EDEFDA"
     },
+    "CHRIST": {
+        "address": "CHRIST University, Bengaluru, India",
+        "aoi_bounds": [
+            77.5991743694273,
+            12.92790306452418,
+            77.61114678325313,
+            12.939646432556193
+        ],
+        "draw_settings": {
+            "urban": {
+                "cmap": [
+                    "#433633",
+                    "#FF5E5B",
+                    "#FF5E5B"
+                ],
+                "ec": "#2F3737",
+                "lw": 0.5,
+                "zorder": 5
+            },
+            "water": {
+                "fc": "#a8e1e6",
+                "ec": "#2F3737",
+                "hatch": "ooo...",
+                "hatch_c": "#9bc3d4",
+                "lw": 1,
+                "zorder": 3
+            },
+            "grassland": {
+                "fc": "#8BB174",
+                "ec": "#2F3737",
+                "hatch": "ooo...",
+                "hatch_c": "#A7C497",
+                "lw": 1,
+                "zorder": 1
+            },
+            "woodland": {
+                "fc": "#64B96A",
+                "ec": "#2F3737",
+                "lw": 1,
+                "zorder": 2
+            },
+            "streets": {
+                "fc": "#2F3737",
+                "zorder": 4
+            },
+            "other": {
+                "fc": "#F2F4CB",
+                "ec": "#2F3737",
+                "lw": 1,
+                "zorder": 3
+            }
+        },
+        "name_on": true,
+        "name": "CHRIST University, Bengaluru, India",
+        "custom_title": "CHRIST University, Bengaluru, India",
+        "font_size": 27,
+        "font_color": "#1500b5",
+        "text_x": 0,
+        "text_y": 51,
+        "text_rotation": 0,
+        "shape": "circle",
+        "contour_width": 0,
+        "contour_color": "#2F3737",
+        "bg_shape": "rectangle",
+        "bg_buffer": 8,
+        "bg_color": "#EDEFDA"
+    },
+    "Chennai_Central": {
+        "address": "Chennai Central, Chennai, India",
+        "aoi_bounds": [
+            77.5991743694273,
+            12.92790306452418,
+            77.61114678325313,
+            12.939646432556193
+        ],
+        "draw_settings": {
+            "urban": {
+                "cmap": [
+                    "#433633",
+                    "#FF5E5B",
+                    "#FF5E5B"
+                ],
+                "ec": "#2F3737",
+                "lw": 0.5,
+                "zorder": 5
+            },
+            "water": {
+                "fc": "#a8e1e6",
+                "ec": "#2F3737",
+                "hatch": "ooo...",
+                "hatch_c": "#9bc3d4",
+                "lw": 1,
+                "zorder": 3
+            },
+            "grassland": {
+                "fc": "#8BB174",
+                "ec": "#2F3737",
+                "hatch": "ooo...",
+                "hatch_c": "#A7C497",
+                "lw": 1,
+                "zorder": 1
+            },
+            "woodland": {
+                "fc": "#64B96A",
+                "ec": "#2F3737",
+                "lw": 1,
+                "zorder": 2
+            },
+            "streets": {
+                "fc": "#2F3737",
+                "zorder": 4
+            },
+            "other": {
+                "fc": "#F2F4CB",
+                "ec": "#2F3737",
+                "lw": 1,
+                "zorder": 3
+            }
+        },
+        "name_on": true,
+        "name": "Chennai Central, Chennai, India",
+        "custom_title": "Chennai Central, Chennai, India",
+        "font_size": 27,
+        "font_color": "#1500b5",
+        "text_x": 0,
+        "text_y": 51,
+        "text_rotation": 0,
+        "shape": "rectangle",
+        "contour_width": 0,
+        "contour_color": "#2F3737",
+        "bg_shape": "rectangle",
+        "bg_buffer": 8,
+        "bg_color": "#EDEFDA"
+    },
     "Edinburgh": {
         "address": "Princes St, Edinburgh, UK",
         "custom_title": "",

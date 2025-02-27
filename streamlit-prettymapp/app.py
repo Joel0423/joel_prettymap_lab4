@@ -14,9 +14,9 @@ from prettymapp.geo import GeoCodingError, get_aoi
 from prettymapp.settings import STYLES
 
 st.set_page_config(
-    page_title="prettymapp", page_icon="🖼️", initial_sidebar_state="collapsed"
+    page_title="Joel's prettymapp", page_icon="🖼️", initial_sidebar_state="collapsed", layout="wide"
 )
-st.markdown("# Prettymapp")
+st.markdown("# Joel's Prettymapp")
 
 with open("./streamlit-prettymapp/examples.json", "r", encoding="utf8") as f:
     EXAMPLES = json.load(f)
@@ -32,12 +32,12 @@ if not st.session_state:
 
 example_image_pattern = "streamlit-prettymapp/example_prints/{}_small.png"
 example_image_fp = [
-    example_image_pattern.format(name.lower()) for name in list(EXAMPLES.keys())[:4]
+    example_image_pattern.format(name.lower()) for name in list(EXAMPLES.keys())[:6]
 ]
 index_selected = image_select(
     "",
     images=example_image_fp,
-    captions=list(EXAMPLES.keys())[:4],
+    captions=list(EXAMPLES.keys())[:6],
     index=0,
     return_value="index",
 )
@@ -188,21 +188,20 @@ with st.spinner("Creating map... (may take up to a minute)"):
     }
     fig = st_plot_all(_df=df, **config)
     # result_container.write(html, unsafe_allow_html=True)
-    st.pyplot(fig, pad_inches=0, bbox_inches="tight", transparent=True, dpi=300)
+    st.pyplot(fig, pad_inches=1.7, bbox_inches="tight", transparent=True, dpi=300)
 
-# svg_string = plt_to_svg(fig)
-# html = svg_to_html(svg_string)
-# st.write("")
-# fname = slugify(address)
-# img_format = st.selectbox("Download image as", ["svg", "png", "jpg"], index=0)
-# if img_format == "svg":
-#     data = svg_string
-# elif img_format == "png":
-#     import io
-#
-#     data = io.BytesIO()
-#     fig.savefig(data, pad_inches=0, bbox_inches="tight", transparent=True)
-# st.download_button(label="Download image", data=data, file_name=f"{fname}.{img_format}")
+import io
+buf = io.BytesIO()
+fig.savefig(buf, format="png")
+buf.seek(0)
+
+# Create a download button
+st.download_button(
+    label="Download Figure as PNG",
+    data=buf,
+    file_name="figure.png",
+    mime="image/png"
+)
 
 st.markdown("</br>", unsafe_allow_html=True)
 st.markdown("</br>", unsafe_allow_html=True)
